@@ -1,0 +1,102 @@
+	<div class="container-fluid paddingzero">
+		
+			<header class="header">
+			<p>MINE MODEL CONTROL BOARD</p>
+			
+			<img src="images/accenture_logo.png" alt="picture" class="pull-right logo" >
+			</header>
+		
+		<div>
+			<div style="margin-left: 10px;">
+				<div class="card col-xs-3">
+					<div class="cardhead">HAZARDOUS GAS CONCENTRATION ALERT</div>
+					<div>
+						<img id ="gascard" src="images/No Alert Grey.png" alt="picture" class="image">
+						<span id="GasSpan">No Alert</span>
+					</div>
+				</div>
+				<div class="card col-xs-3">
+          <div class="cardhead">SHAFT MALFUNCTION ALERT</div>
+					<div>
+						<img src="images/Shaft Malfunction Grey.png" alt="picture" class="image">
+						<span id="currentspeed">Current speed- 5m/s</span>
+				    <span> Threshold speed- 4m/s</span>
+					</div>
+				</div>
+				<div class="card col-xs-3">
+          <div class="cardhead">CONVEYOR OVERLOAD ALERT </div>
+					<div>
+						<img id="weightcard" src="images/Conveyor Grey.png" alt="picture" style="width:190px;margin-left:60px;margin-top:40px;margin-bottom:24px;">
+						<span id="WeightSpan">Current weight: 45t</span>
+				          <span>Threshold weight:50t</span>
+					</div>
+				</div>
+				<div class="card col-xs-3">
+          <div class="cardhead">IMMEDIATE ALARM</div>
+					<div>
+						<img id="alarmcard" src="images/Alarm Grey.png" alt="picture" class="image" ng-click="buzzer();">
+						<span>Press to raise an Alarm</span>
+					</div>
+				</div>
+			</div>
+			<div style="clear: both; margin-left: 10px;">
+
+				<div class="card col-xs-3">
+					  <div class="cardhead">CONTROLS</div>
+						<div>
+							<div class="cardcontrol">
+									<img id='fancard' src="images/Fan Grey.png" alt="picture" class="offimg">
+							</div>
+							<div class="cardcontrol">
+								<label class="switch">
+								<input id="check1"type="checkbox" ng-model="fn" ng-click="fan()">
+								<span class="slider round"></span>
+								</label>
+							</div>
+							<span style="display: inline-block; margin-top:76px;margin-left:-85px;"> Ventilation Fan </span>
+
+						</div>
+							<hr>
+						<div>
+							<div class="cardcontrol">
+									<img id='buzzercard' src="images/Buzzer Grey.png" alt="picture" class="offimg">
+							</div>
+							<div class="cardcontrol">
+								<label class="switch">
+								<input id="check2"type="checkbox" ng-model="buzz" >
+								<span  class="slider round"></span>
+								</label>
+							</div>
+							<span style="display: inline-block; margin-top:68px;margin-left:-85px;">Buzzer Alarm</span>
+
+						</div>
+
+			</div>
+		</div>
+				<div class="card col-xs-3">
+          <div class="cardhead">RESTRICTED AREA ENTRY ALERT</div>
+					<div>
+						<img id="rfidcard" src="images/Restricted Area Grey.png" alt="picture" class="image">
+						<span>Unauthorized Access by Worker 1</span>
+					</div>
+				</div>
+				<div class="card col-xs-3">
+          <div class="cardhead">LOCOMOTIVE MALFUNCTION ALERT</div>
+					<div>
+						<img id="locomotivecard" src="images/Locomotive Grey.png" alt="picture" class="truck" ng-click="resetlocomotive();">
+						<span style="margin-top:20px;">Screeching Sound Alert</span>
+					</div>
+				</div>
+				<div class="card col-xs-3">
+          <div class="cardhead">TEMPERATURE ALERT</div>
+					<div>
+						<img id="tempcard" src="images/Temperature Grey.png" alt="picture"class="temp">
+						<span id="TempSpan">Current Temp- 27°C</span>
+				          <span>Threshold Temp- 25°C</span>
+					</div>
+				</div>
+			</div>
+			<div style="clear: both;">
+		</div>
+
+	</div>

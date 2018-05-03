@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <base href="/">
+    <title>Mining Dashboard</title>
+    <!--Important Libraby JS files-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="/lib/bootstrap.min.js"></script>
+    <script src="/lib/angular.min.js"></script>
+    <script src="/lib/angular-route.min.js"></script>
+    <script src="/lib/ngStorage.js"></script>
+    <script src="/lib/loading-bar.js"></script>
+    <script src="/lib/socket.io.js"></script>
+    
+    <!--Important Style Sheets-->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+   
+    <link rel="stylesheet" href="CSS/style.css">
+    <!--Important Clinical Application JS files-->
+    <script src="/scripts/app.js"></script>
+    <script src="/scripts/DashboardController.js"></script>
+    
+   
+    
+    
+</head>
+
+<body ng-app="MineModelUseCase"  id="ClinicalAppBody">
+    
+<div ng-view=""></div>
+
+</body>
+
+</html>
